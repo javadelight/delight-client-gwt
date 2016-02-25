@@ -9,6 +9,13 @@ import org.timepedia.exporter.client.NoExport;
 import de.mxro.client.ClientEnv;
 import de.mxro.metrics.js.JsMetricsNode;
 
+/**
+ * 
+ * <p>
+ * This object allows access to some global utility services which useful for
+ * client applications.
+ *
+ */
 @Export
 public class JsClientEnv implements Exportable {
 
