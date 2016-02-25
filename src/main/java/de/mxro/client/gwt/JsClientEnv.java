@@ -6,14 +6,14 @@ import org.timepedia.exporter.client.Export;
 import org.timepedia.exporter.client.Exportable;
 import org.timepedia.exporter.client.NoExport;
 
-import de.mxro.client.BasicClient;
+import de.mxro.client.ClientEnv;
 import de.mxro.metrics.js.JsMetricsNode;
 
 @Export
 public class JsClientEnv implements Exportable {
 
     @NoExport
-    private BasicClient wrapped;
+    private ClientEnv wrapped;
 
     @Export
     public JsMetricsNode metrics() {
@@ -26,7 +26,7 @@ public class JsClientEnv implements Exportable {
     }
 
     @NoExport
-    public static JsClientEnv wrap(final BasicClient client) {
+    public static JsClientEnv wrap(final ClientEnv client) {
         final JsClientEnv clientJs = new JsClientEnv();
 
         clientJs.wrapped = client;
