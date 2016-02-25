@@ -10,7 +10,7 @@ import de.mxro.client.BasicClient;
 import de.mxro.metrics.js.JsMetricsNode;
 
 @Export
-public class JsClient implements Exportable {
+public class JsClientEnv implements Exportable {
 
     @NoExport
     private BasicClient wrapped;
@@ -26,15 +26,15 @@ public class JsClient implements Exportable {
     }
 
     @NoExport
-    public static JsClient wrap(final BasicClient client) {
-        final JsClient clientJs = new JsClient();
+    public static JsClientEnv wrap(final BasicClient client) {
+        final JsClientEnv clientJs = new JsClientEnv();
 
         clientJs.wrapped = client;
 
         return clientJs;
     }
 
-    public JsClient() {
+    public JsClientEnv() {
         super();
     }
 
