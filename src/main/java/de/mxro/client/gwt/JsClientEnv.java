@@ -14,6 +14,11 @@ import de.mxro.metrics.js.JsMetricsNode;
  * <p>
  * This object allows access to some global utility services which useful for
  * client applications.
+ * <p>
+ * This object is for internal use by the engine.
+ * 
+ * <p>
+ * FOR CHRIS: No need to document the methods of this object.
  *
  */
 @Export
