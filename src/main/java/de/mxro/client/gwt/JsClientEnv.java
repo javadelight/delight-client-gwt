@@ -2,10 +2,6 @@ package de.mxro.client.gwt;
 
 import delight.log.js.JsLogsNode;
 
-import org.timepedia.exporter.client.Export;
-import org.timepedia.exporter.client.Exportable;
-import org.timepedia.exporter.client.NoExport;
-
 import de.mxro.client.ClientEnv;
 import de.mxro.metrics.js.JsMetricsNode;
 
@@ -21,23 +17,20 @@ import de.mxro.metrics.js.JsMetricsNode;
  * FOR CHRIS: No need to document the methods of this object.
  *
  */
-@Export
-public class JsClientEnv implements Exportable {
+@jsinterop.annotations.JsType public class JsClientEnv  {
 
-    @NoExport
+    @jsinterop.annotations.JsIgnore
     private ClientEnv wrapped;
 
-    @Export
-    public JsMetricsNode metrics() {
+    @delight.functional.annotations.ExportedElement public JsMetricsNode metrics() {
         return JsMetricsNode.wrap(wrapped.metrics());
     }
 
-    @Export
-    public JsLogsNode logs() {
+    @delight.functional.annotations.ExportedElement public JsLogsNode logs() {
         return JsLogsNode.wrap(wrapped.logs());
     }
 
-    @NoExport
+    @jsinterop.annotations.JsIgnore
     public static JsClientEnv wrap(final ClientEnv client) {
         final JsClientEnv clientJs = new JsClientEnv();
 
