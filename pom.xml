@@ -3,7 +3,7 @@
 	<artifactId>client-api-gwt</artifactId>
 	<version>0.0.2</version>
 	<description>Bundle of useful tools for building hybrid Java/JavaScript applications with GWT.</description>
-	<url>https://github.com/mxro/client-api-gwt</url>
+	<url>https://github.com/javadelight/delight-client-gwt</url>
 	<properties>
 		<module.gwtVersion>2.8.2</module.gwtVersion>
 		<module.importedPackages>
