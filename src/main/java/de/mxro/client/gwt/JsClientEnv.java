@@ -11,8 +11,6 @@ import de.mxro.metrics.js.JsMetricsNode;
  * <p>
  * This object is for internal use by the engine.
  * 
- * <p>
- * FOR CHRIS: No need to document the methods of this object.
  *
  */
 @jsinterop.annotations.JsType
