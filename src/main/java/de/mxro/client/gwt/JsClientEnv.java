@@ -1,7 +1,5 @@
 package de.mxro.client.gwt;
 
-import delight.log.js.JsLogsNode;
-
 import de.mxro.client.ClientEnv;
 import de.mxro.metrics.js.JsMetricsNode;
 
@@ -26,11 +24,6 @@ public class JsClientEnv {
 	@delight.functional.annotations.ExportedElement
 	public JsMetricsNode metrics() {
 		return JsMetricsNode.wrap(wrapped.metrics());
-	}
-
-	@delight.functional.annotations.ExportedElement
-	public JsLogsNode logs() {
-		return JsLogsNode.wrap(wrapped.logs());
 	}
 
 	@jsinterop.annotations.JsIgnore

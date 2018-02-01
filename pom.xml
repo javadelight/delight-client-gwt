@@ -26,12 +26,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.javadelight</groupId>
-			<artifactId>delight-log-js</artifactId>
-			<version>0.0.2</version>
-		</dependency>
-
-		<dependency>
 			<groupId>de.mxro.client</groupId>
 			<artifactId>client-api</artifactId>
 			<version>0.0.3</version>
